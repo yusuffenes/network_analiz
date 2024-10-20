@@ -6,3 +6,9 @@ Kullanıcılar, gerçek zamanlı olarak paketleri görüntüleyebilir, nmap ile 
 
 # Projenin Amacı
 Bu proje ile ağ trafiği üzerinde canlı bir analiz yapılabilmesi, belirli protokol filtreleri ile istenen paketlerin izlenmesi ve incelemelerin interaktif bir terminal arayüzü üzerinden yönetilmesi hedeflenmiştir. Ayrıca, seçilen IP adresleri üzerinde otomatik veya manuel nmap taraması yapma ve IP coğrafi bilgilerini sorgulama özellikleri eklenmiştir.
+
+# Gereksinimler
+Proje aşağıdaki Python modüllerini kullanmaktadır. Gerekli kütüphaneleri yüklemek için şu komutu kullanabilirsiniz:
+```
+pip install scapy nmap requests psutil curses
+```
