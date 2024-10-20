@@ -12,8 +12,24 @@ Proje aşağıdaki Python modüllerini kullanmaktadır. Gerekli kütüphaneleri 
 ```
 pip install scapy nmap requests psutil curses
 ```
-- Scapy: Ağ paketlerini yakalama ve analiz etme.
-- nmap: IP adresi üzerinden port taraması yapma.
-- requests: IP coğrafi konum bilgilerini almak için HTTP isteği gönderme.
-- psutil: Sistem arayüzlerini listelemek için.
-- curses: Terminal arayüzü oluşturma.
+- <b>Scapy</b> : Ağ paketlerini yakalama ve analiz etme.
+- <b>nmap</b>: IP adresi üzerinden port taraması yapma.
+- <b>request</b>: IP coğrafi konum bilgilerini almak için HTTP isteği gönderme.
+- <b>psutil</b>: Sistem arayüzlerini listelemek için.
+- <b>curses</b>: Terminal arayüzü oluşturma.
+
+# Nasıl Kullanılır?
+1. Projeyi çalıştırdığınızda, sisteminizde tespit edilen ağ arayüzleri listelenecek ve hangisini kullanmak istediğinizi soracaktır.
+2. Arayüz seçildikten sonra, program ağ trafiğini dinlemeye başlayacak.
+3. Klavye kısayolları kullanarak paketleri görüntüleyebilir, filtreleri değiştirebilir veya seçili paket üzerinde nmap taraması ve coğrafi sorgulama yapabilirsiniz.
+
+# Klavye Kısayolları:
+### Tab: Görüntüleme modları arasında geçiş yapar (Özet, İçerik, Hexdump, Nmap Tarama, Coğrafi Konum).
+### r: Otomatik kaydırmayı aç/kapat.
+### t/u/a/i: TCP, UDP, ARP, ICMP filtrelerini aç/kapat.
+### n: Manuel olarak seçili paket üzerindeki IP adresine nmap taraması yapar.
+### q: Programı sonlandırır.
+
+<b>Geliştirici</b>: @yusuffenes
+<b>Ders</b>: Bilgisayar Ağları
+<b>Tarih</b>: Ekim 2024
