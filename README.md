@@ -12,3 +12,8 @@ Proje aşağıdaki Python modüllerini kullanmaktadır. Gerekli kütüphaneleri 
 ```
 pip install scapy nmap requests psutil curses
 ```
+- Scapy: Ağ paketlerini yakalama ve analiz etme.
+- nmap: IP adresi üzerinden port taraması yapma.
+- requests: IP coğrafi konum bilgilerini almak için HTTP isteği gönderme.
+- psutil: Sistem arayüzlerini listelemek için.
+- curses: Terminal arayüzü oluşturma.
