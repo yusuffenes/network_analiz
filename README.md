@@ -24,11 +24,11 @@ pip install scapy nmap requests psutil curses
 3. Klavye kısayolları kullanarak paketleri görüntüleyebilir, filtreleri değiştirebilir veya seçili paket üzerinde nmap taraması ve coğrafi sorgulama yapabilirsiniz.
 
 # Klavye Kısayolları:
-### Tab: Görüntüleme modları arasında geçiş yapar (Özet, İçerik, Hexdump, Nmap Tarama, Coğrafi Konum).
-### r: Otomatik kaydırmayı aç/kapat.
-### t/u/a/i: TCP, UDP, ARP, ICMP filtrelerini aç/kapat.
-### n: Manuel olarak seçili paket üzerindeki IP adresine nmap taraması yapar.
-### q: Programı sonlandırır.
+ <b>Tab</b>: Görüntüleme modları arasında geçiş yapar (Özet, İçerik, Hexdump, Nmap Tarama, Coğrafi Konum).
+ <b>r</b>: Otomatik kaydırmayı aç/kapat.
+ <b>t/u/a/i</b>: TCP, UDP, ARP, ICMP filtrelerini aç/kapat.
+ <b>n</b>: Manuel olarak seçili paket üzerindeki IP adresine nmap taraması yapar.
+ <b>q ve CTRL + C</b>: Programı sonlandırır.
 
 
 
