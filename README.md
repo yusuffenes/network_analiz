@@ -30,6 +30,9 @@ pip install scapy nmap requests psutil curses
 ### n: Manuel olarak seçili paket üzerindeki IP adresine nmap taraması yapar.
 ### q: Programı sonlandırır.
 
+
+
+
 <b>Geliştirici</b>: @yusuffenes
 
 <b>Ders</b>: Bilgisayar Ağları
