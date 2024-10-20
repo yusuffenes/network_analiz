@@ -31,5 +31,7 @@ pip install scapy nmap requests psutil curses
 ### q: Programı sonlandırır.
 
 <b>Geliştirici</b>: @yusuffenes
+
 <b>Ders</b>: Bilgisayar Ağları
+
 <b>Tarih</b>: Ekim 2024
