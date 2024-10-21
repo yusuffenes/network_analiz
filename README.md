@@ -13,10 +13,11 @@ Proje aşağıdaki Python modüllerini kullanmaktadır. Gerekli kütüphaneleri 
 pip install scapy nmap requests psutil curses
 ```
 - <b>Scapy</b> : Ağ paketlerini yakalama ve analiz etme.
-- <b>nmap</b>: IP adresi üzerinden port taraması yapma.
 - <b>request</b>: IP coğrafi konum bilgilerini almak için HTTP isteği gönderme.
 - <b>psutil</b>: Sistem arayüzlerini listelemek için.
 - <b>curses</b>: Terminal arayüzü oluşturma.
+- <b>Matplotlib</b>: Grafik Çıkartma
+- <b>Tkinter</b> Görsel arayüz
 
 # Nasıl Kullanılır?
 1. Projeyi çalıştırdığınızda, sisteminizde tespit edilen ağ arayüzleri listelenecek ve hangisini kullanmak istediğinizi soracaktır.
