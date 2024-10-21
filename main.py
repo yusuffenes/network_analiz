@@ -233,8 +233,8 @@ class PacketAnalyzerGUI:
             self.prev_bytes_recv = net_io.bytes_recv
 
             self.times.append(current_time)
-            self.bytes_sent.append(bytes_sent / 1024 / 1024)  # MB cinsinden
-            self.bytes_recv.append(bytes_recv / 1024 / 1024)  # MB cinsinden
+            self.bytes_sent.append(bytes_sent / 1024 / 1024)
+            self.bytes_recv.append(bytes_recv / 1024 / 1024)
 
             if len(self.times) > 60:
                 self.times = self.times[-60:]
@@ -256,3 +256,11 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = PacketAnalyzerGUI(root)
     root.mainloop()
+
+## Sonuç olarak, bu uygulama ile ağ trafiğini izleyebilir, paketleri analiz edebilir ve coğrafi konum bilgilerini görebilirsiniz.
+## Ayrıca, ağ trafiğini grafik üzerinde canlı olarak görebilir ve farklı modlarda paketleri görüntüleyebilirsiniz.
+
+
+
+
+
