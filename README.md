@@ -1,37 +1,38 @@
-# Paket Analiz Aracı
+# Gelişmiş Paket Analiz Aracı
+Bu proje, Python kullanarak ağ trafiğini izlemek ve analiz etmek için geliştirilmiş bir paket analiz aracıdır. Kullanıcı dostu bir arayüze sahip olan bu araç, farklı ağ arayüzlerini seçerek canlı ağ trafiğini izleme, protokol bazlı analiz yapma, paketlerin içeriklerini görüntüleme ve coğrafi bilgi elde etme gibi çeşitli işlevleri destekler.
 
-Bu proje, Bilgisayar Ağları dersi ödevi kapsamında geliştirilmiştir.
-Ağ trafiğini izlemek, analiz etmek ve çeşitli protokolleri (TCP, UDP, ARP, ICMP) filtrelemek için basit bir Paket Analiz Aracıdır.
-Kullanıcılar, gerçek zamanlı olarak paketleri görüntüleyebilir, nmap ile port taraması yapabilir ve IP tabanlı coğrafi konum bilgilerini sorgulayabilir.
-
-# Projenin Amacı
-Bu proje ile ağ trafiği üzerinde canlı bir analiz yapılabilmesi, belirli protokol filtreleri ile istenen paketlerin izlenmesi ve incelemelerin interaktif bir terminal arayüzü üzerinden yönetilmesi hedeflenmiştir. Ayrıca, seçilen IP adresleri üzerinde otomatik veya manuel nmap taraması yapma ve IP coğrafi bilgilerini sorgulama özellikleri eklenmiştir.
+# Özellikler
+- ### Canlı Ağ Trafiği İzleme: Seçilen ağ arayüzünde paketleri canlı olarak yakalar.
+- ### Protokol Analizi: IP, TCP, UDP, ICMP gibi farklı protokollerdeki paketleri analiz eder.
+- ### Paket İçeriği Görüntüleme: Paket içeriklerini hexdump formatında detaylı olarak gösterir.
+- ### Coğrafi Bilgi Sorgulama: IP adresine dayalı coğrafi bilgileri (ülke ve şehir) gösterir.
+- ### Paket Gecikmesi Ayarı: Kullanıcı, paket yakalama sürecinde gecikme süresini belirleyebilir.
+- ### Ağ Trafiği Grafiği: Seçilen arayüzde geçen veri miktarını (MB/s) grafiksel olarak gösterir.
 
 # Gereksinimler
-Proje aşağıdaki Python modüllerini kullanmaktadır. Gerekli kütüphaneleri yüklemek için şu komutu kullanabilirsiniz:
+Bu proje aşağıdaki Python kütüphanelerini kullanmaktadır:
+- tkinter
+- scapy
+- psutil
+- requests
+- matplotlib
+Bu kütüphaneleri kurmak için aşağıdaki komutu çalıştırabilirsiniz:
 ```
-pip install scapy nmap requests psutil curses
+pip install scapy psutil requests matplotlib
 ```
-- <b>Scapy</b> : Ağ paketlerini yakalama ve analiz etme.
-- <b>request</b>: IP coğrafi konum bilgilerini almak için HTTP isteği gönderme.
-- <b>psutil</b>: Sistem arayüzlerini listelemek için.
-- <b>curses</b>: Terminal arayüzü oluşturma.
-- <b>Matplotlib</b>: Grafik Çıkartma
-- <b>Tkinter</b> Görsel arayüz
+# Kullanım
+1. Projeyi yerel makinenize klonlayın:
 
-# Nasıl Kullanılır?
-1. Projeyi çalıştırdığınızda, sisteminizde tespit edilen ağ arayüzleri listelenecek ve hangisini kullanmak istediğinizi soracaktır.
-2. Arayüz seçildikten sonra, program ağ trafiğini dinlemeye başlayacak.
-3. Klavye kısayolları kullanarak paketleri görüntüleyebilir, filtreleri değiştirebilir veya seçili paket üzerinde nmap taraması ve coğrafi sorgulama yapabilirsiniz.
-
-# Klavye Kısayolları:
- <b>Tab</b>: Görüntüleme modları arasında geçiş yapar (Özet, İçerik, Hexdump, Nmap Tarama, Coğrafi Konum).
- <b>r</b>: Otomatik kaydırmayı aç/kapat.
- <b>t/u/a/i</b>: TCP, UDP, ARP, ICMP filtrelerini aç/kapat.
- <b>n</b>: Manuel olarak seçili paket üzerindeki IP adresine nmap taraması yapar.
- <b>q ve CTRL + C</b>: Programı sonlandırır.
-
-
+```
+git clone https://github.com/kullanici_adi/gelismis-paket-analiz-araci.git
+```
+2. Gereksinimleri kurduktan sonra, main.py dosyasını çalıştırın:
+```
+python main.py
+```
+3. Uygulama arayüzü açıldığında, bir ağ arayüzü seçin ve sniff işlemini başlatmak için "Sniff Başlat" butonuna basın.
+4. Paket analizini durdurmak için "Sniff Durdur" butonuna basabilirsiniz.
+5. Canlı ağ trafiğini görsel olarak izlemek için soldaki grafik alanını kullanabilirsiniz.
 
 
 <b>Geliştirici</b>: @yusuffenes
