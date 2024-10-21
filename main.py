@@ -8,7 +8,6 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import time
 
-# Kullanılabilir arayüzleri listele
 ifaces = [iface for iface in psutil.net_if_addrs().keys() if iface != 'lo']
 
 class PacketAnalyzerGUI:
@@ -23,16 +22,14 @@ class PacketAnalyzerGUI:
         self.bytes_recv = []
         self.times = []
         self.start_time = time.time()
-        self.packet_delay = 0.1  # Varsayılan paket gecikmesi (saniye)
+        self.packet_delay = 0.1
 
         self.modes = ['Özet', 'Coğrafi Bilgi', 'Protokol Analizi', 'Paket İçeriği']
         self.current_mode = tk.StringVar(value=self.modes[0])
 
-        # Ana pencereyi iki ana frame'e böl
         main_frame = tk.PanedWindow(root, orient=tk.HORIZONTAL)
         main_frame.pack(fill=tk.BOTH, expand=1)
 
-        # Sol tarafta grafik alanı
         left_frame = tk.Frame(main_frame)
         main_frame.add(left_frame)
 
@@ -41,11 +38,10 @@ class PacketAnalyzerGUI:
         self.canvas.draw()
         self.canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=True)
 
-        # Sağ tarafta kontrol ve gösterim alanı
+
         right_frame = tk.Frame(main_frame)
         main_frame.add(right_frame)
 
-        # Üst kısım: Kontroller
         control_frame = tk.Frame(right_frame)
         control_frame.pack(side=tk.TOP, fill=tk.X)
 
@@ -65,7 +61,7 @@ class PacketAnalyzerGUI:
         self.mode_menu.config(width=15)
         self.mode_menu.pack(side=tk.LEFT, padx=5)
 
-        # Paket gecikmesi için kaydırıcı
+
         self.delay_label = tk.Label(control_frame, text="Paket Gecikmesi (ms):", font=("Arial", 10, "bold"))
         self.delay_label.pack(side=tk.LEFT, padx=5)
 
@@ -77,12 +73,11 @@ class PacketAnalyzerGUI:
         self.delay_value = tk.Label(control_frame, text=f"{int(self.packet_delay * 1000)} ms", width=5)
         self.delay_value.pack(side=tk.LEFT, padx=5)
 
-        # Orta kısım: Paket gösterimi
         self.packet_display = scrolledtext.ScrolledText(right_frame, height=10, width=60, bg="#f0f0f0", font=("Consolas", 10))
         self.packet_display.pack(pady=5, padx=5, fill=tk.BOTH, expand=True)
         self.packet_display.bind("<Double-1>", self.show_packet_details)
 
-        # Alt kısım: Coğrafi bilgi ve Hexdump
+
         bottom_frame = tk.Frame(right_frame)
         bottom_frame.pack(side=tk.BOTTOM, fill=tk.BOTH, expand=True)
 
@@ -241,7 +236,6 @@ class PacketAnalyzerGUI:
             self.bytes_sent.append(bytes_sent / 1024 / 1024)  # MB cinsinden
             self.bytes_recv.append(bytes_recv / 1024 / 1024)  # MB cinsinden
 
-            # Son 60 saniyeyi göster
             if len(self.times) > 60:
                 self.times = self.times[-60:]
                 self.bytes_sent = self.bytes_sent[-60:]
