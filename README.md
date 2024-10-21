@@ -1,13 +1,13 @@
-# Gelişmiş Paket Analiz Aracı
+# Paket Analiz Aracı
 Bu proje, Python kullanarak ağ trafiğini izlemek ve analiz etmek için geliştirilmiş bir paket analiz aracıdır. Kullanıcı dostu bir arayüze sahip olan bu araç, farklı ağ arayüzlerini seçerek canlı ağ trafiğini izleme, protokol bazlı analiz yapma, paketlerin içeriklerini görüntüleme ve coğrafi bilgi elde etme gibi çeşitli işlevleri destekler.
 
 # Özellikler
-- ### Canlı Ağ Trafiği İzleme: Seçilen ağ arayüzünde paketleri canlı olarak yakalar.
-- ### Protokol Analizi: IP, TCP, UDP, ICMP gibi farklı protokollerdeki paketleri analiz eder.
-- ### Paket İçeriği Görüntüleme: Paket içeriklerini hexdump formatında detaylı olarak gösterir.
-- ### Coğrafi Bilgi Sorgulama: IP adresine dayalı coğrafi bilgileri (ülke ve şehir) gösterir.
-- ### Paket Gecikmesi Ayarı: Kullanıcı, paket yakalama sürecinde gecikme süresini belirleyebilir.
-- ### Ağ Trafiği Grafiği: Seçilen arayüzde geçen veri miktarını (MB/s) grafiksel olarak gösterir.
+- <b>Canlı Ağ Trafiği İzleme:</b> Seçilen ağ arayüzünde paketleri canlı olarak yakalar.
+-  <b>Protokol Analizi:</b> IP, TCP, UDP, ICMP gibi farklı protokollerdeki paketleri analiz eder.
+-  <b>Paket İçeriği Görüntüleme:</b> Paket içeriklerini hexdump formatında detaylı olarak gösterir.
+-  <b>Coğrafi Bilgi Sorgulama:</b> IP adresine dayalı coğrafi bilgileri (ülke ve şehir) gösterir.
+-  <b>Paket Gecikmesi Ayarı:</b> Kullanıcı, paket yakalama sürecinde gecikme süresini belirleyebilir.
+-  <b>Ağ Trafiği Grafiği:</b> Seçilen arayüzde geçen veri miktarını (MB/s) grafiksel olarak gösterir.
 
 # Gereksinimler
 Bu proje aşağıdaki Python kütüphanelerini kullanmaktadır:
@@ -35,7 +35,7 @@ python main.py
 5. Canlı ağ trafiğini görsel olarak izlemek için soldaki grafik alanını kullanabilirsiniz.
 
 
-<b>Geliştirici</b>: @yusuffenes
+<b>Geliştirici</b>: [@yusuffenes](https://github.com/yusuffenes)
 
 <b>Ders</b>: Bilgisayar Ağları
 
