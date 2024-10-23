@@ -24,7 +24,7 @@ pip install scapy psutil requests matplotlib
 1. Projeyi yerel makinenize klonlayın:
 
 ```
-git clone https://github.com/kullanici_adi/gelismis-paket-analiz-araci.git
+git clone https://github.com/yusuffenes/network_analiz.git
 ```
 2. Gereksinimleri kurduktan sonra, main.py dosyasını çalıştırın:
 ```
