@@ -33,7 +33,7 @@ python main.py
 3. Uygulama arayüzü açıldığında, bir ağ arayüzü seçin ve sniff işlemini başlatmak için "Sniff Başlat" butonuna basın.
 4. Paket analizini durdurmak için "Sniff Durdur" butonuna basabilirsiniz.
 5. Canlı ağ trafiğini görsel olarak izlemek için soldaki grafik alanını kullanabilirsiniz.
-
+https://youtu.be/Ya56pPo4W5o
 
 <b>Geliştirici</b>: [@yusuffenes](https://github.com/yusuffenes)
 
